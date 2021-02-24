@@ -55,6 +55,20 @@
       "spec": "https://wicg.github.io/serial/",
       "explainer": "https://github.com/WICG/serial/blob/gh-pages/EXPLAINER.md",
       "status": "draft-community-group-report"
+    },
+    {
+      "tag": "generic_sensor",
+      "name": "Generic Sensor API and related APIs (Accelerometer, Gyroscope, Orientation, Motion, Gravity)",
+      "spec": "https://www.w3.org/TR/generic_sensor/",
+      "related": [
+        "https://w3c.github.io/accelerometer/",
+        "https://w3c.github.io/gyroscope/",
+        "https://w3c.github.io/orientation-sensor/",
+        "https://w3c.github.io/motion-sensors/"
+      ],
+      "demos": "https://intel.github.io/generic-sensor-demos/",
+      "article": "https://web.dev/generic-sensor/",
+      "status": "w3c-candidate-recommendation"
     }
   ],
   "status": {
@@ -118,6 +132,21 @@
       "chrome": {
         "completeness": "yes",
         "since": "Chrome 89",
+        "has_details": true
+      },
+      "firefox": {
+        "completeness": "harmful",
+        "has_details": true
+      },
+      "safari": {
+        "completeness": "harmful",
+        "has_details": true
+      }
+    },
+    "generic_sensor": {
+      "chrome": {
+        "completeness": "yes",
+        "since": "Chrome 67 (Generic Sensor, Motion Sensor including orientation, gyroscope etc.), Chrome 90 (Gravity Sensor)",
         "has_details": true
       },
       "firefox": {
