@@ -126,6 +126,10 @@
       "safari": {
         "completeness": "harmful",
         "has_details": true
+      },
+      "firefox": {
+        "completeness": "defer",
+        "has_details": true
       }
     },
     "serial": {
