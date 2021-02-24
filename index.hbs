@@ -342,6 +342,12 @@ limitations under the License.
             {{#if spec}}
               <br><a class="button status__completeness__detailsbutton" href="{{spec}}" target="_blank" rel="noopener">Spec</a>
             {{/if}}
+            {{#if related}}
+              Related:
+              {{#each related}}
+                <a href="{{this}}">{{counter @index}}</a>&nbsp;
+              {{/each}}
+            {{/if}}
           </td>
         </tr>
       {{/with}}

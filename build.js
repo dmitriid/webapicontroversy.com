@@ -40,5 +40,8 @@ data.api.forEach(api =>
   )
 );
 const rawTpl = fs.readFileSync('index.hbs', 'utf-8');
+Handlebars.registerHelper("counter", function (index){
+  return index + 1;
+});
 const tpl = Handlebars.compile(rawTpl);
 fs.writeFileSync('index.html', htmlmin(tpl(data), htmlminOpts), 'utf-8');
