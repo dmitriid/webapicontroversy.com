@@ -58,7 +58,7 @@
     },
     {
       "tag": "generic_sensor",
-      "name": "Generic Sensor API and related APIs (Accelerometer, Gyroscope, Orientation, Motion, Gravity)",
+      "name": "Generic Sensor API and related APIs",
       "spec": "https://www.w3.org/TR/generic_sensor/",
       "related": [
         "https://w3c.github.io/accelerometer/",
@@ -150,7 +150,7 @@
     "generic_sensor": {
       "chrome": {
         "completeness": "yes",
-        "since": "Chrome 67 (Generic Sensor, Motion Sensor including orientation, gyroscope etc.), Chrome 90 (Gravity Sensor)",
+        "since": "Chrome 67 (Motion Sensor), Chrome 90 (Gravity Sensor)",
         "has_details": true
       },
       "firefox": {
